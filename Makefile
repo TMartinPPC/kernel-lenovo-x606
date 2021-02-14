@@ -70,7 +70,7 @@ ifeq ("$(origin V)", "command line")
   KBUILD_VERBOSE = $(V)
 endif
 ifndef KBUILD_VERBOSE
-  KBUILD_VERBOSE = 1
+  KBUILD_VERBOSE = 0
 endif
 
 ifeq ($(KBUILD_VERBOSE),1)
