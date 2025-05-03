@@ -61,7 +61,7 @@ def is_oldDws(path, gen_spec):
 
     try:
         root = xml.dom.minidom.parse(dws_path)
-    except Exception, e:
+    except Exception as e:
         log(LogLevel.warn, '%s is not xml format, try to use old DCT!' %(dws_path))
         if len(gen_spec) == 0:
             log(LogLevel.warn, 'Please use old DCT UI to gen all files!')
