@@ -16,7 +16,7 @@ import re
 import os
 import sys
 import string
-import ConfigParser
+import configparser
 import xml.dom.minidom
 
 
@@ -41,7 +41,7 @@ class GpioObj(ModuleObj):
         self.__gpio_column_enable = True
 
     def get_cfgInfo(self):
-        cp = ConfigParser.ConfigParser(allow_no_value=True)
+        cp = configparser.ConfigParser(allow_no_value=True)
         cp.read(ModuleObj.get_cmpPath())
 
         # get GPIO_FREQ section
