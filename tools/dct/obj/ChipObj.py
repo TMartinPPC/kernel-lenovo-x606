@@ -16,7 +16,7 @@ import os
 import collections
 import xml.dom.minidom
 
-from GpioObj import GpioObj
+from .GpioObj import GpioObj
 from GpioObj import GpioObj_whitney
 from GpioObj import GpioObj_MT6759
 from GpioObj import GpioObj_MT6739
