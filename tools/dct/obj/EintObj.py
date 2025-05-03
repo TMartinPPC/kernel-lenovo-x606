@@ -94,7 +94,7 @@ class EintObj(ModuleObj):
             value = cp.get('GPIO', op)
             list = re.split(r' +|\t+', value)
 
-            map[int(re.findall(r'\d+', op)[0])] = int(list[len(list)-2])
+            map[int(re.findall(r'\d+', op)[0])] = int(line_parts[len(line_parts)-2])
             mode_map[op] = list[0:len(list)-2]
 
         EintData.set_mapTable(map)
